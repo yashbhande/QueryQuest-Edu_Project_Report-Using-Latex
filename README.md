@@ -19,4 +19,4 @@ Contributions to this project report are welcome! If you have any suggestions, c
 This project report is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For inquiries or further information, please contact [Your Name](mailto:bhandeyash.a01@gmail.com).
+For inquiries or further information, please contact [Yash](mailto:bhandeyash.a01@gmail.com).
