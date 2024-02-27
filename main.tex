@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=0.70in, bottom=0.70in, left=0.8in,right=0.80in]{geometry} 
+\usepackage[pdftex]{graphicx} 
+\usepackage[bookmarks,  colorlinks=false]{hyperref}
+\hypersetup{pdfborder = {0 0 0}}
+\usepackage[final]{pdfpages} 
+\usepackage{float} 
+\usepackage{hyperref}
+\usepackage{pslatex} 
+\usepackage{array} 
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{pgfpages}
+\usepackage[font=small,labelfont=bf]{caption}
+\def\figurename{\textbf{Figure }}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+ 
+
+%For the header and footer
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{%
+%\fancyfoot[L]{\emph{Department of Computer Engineering, SHORT NAME OF COLLEGE, Pune}} % except the center
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\pagestyle{fancy}
+
+\rhead{\emph{Query Quest - Edu}}
+
+\fancyfoot[LO,LE]{\emph{}}
+\cfoot{}
+\fancyfoot[RO, RE]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%Page Border
+% 
+
+
+
+
+%GLOBAL SETTINGS OVER, DOCUMENT BEGINS
+\begin{document}
+\renewcommand\bibname{References}
+\lhead{ }
+
+%FROM HERE YOUR PAGES START GETTING ADDED
+%\pgfpagesuselayout{boxed}
+%\setlength{\parindent}{1cm}
+% includes the cover page
+%\pgfpagesuselayout{boxed}
+%\input{project/cover.tex}
+%\newpage
+
+\input{title.tex}
+\newpage
+
+% includes the certificate page
+\input{certificate.tex} 
+%\newpage
+
+% includes the acknowledgements page
+\input{acknowledgements.tex} 
+\newpage
+
+\input{abstract.tex} % adds the Research Methodology page
+\newpage
+
+
+%TABLE OF CONTENTS AND LIST OF FIGURES ARE AUTOMATICALLY ADDED BY FOLLOWING COMMANDS
+%ADD FIGURE OF TABLES IF YOU NEED TO, CHECK DOCUMENTATION
+\pagenumbering{roman} %numbering before main content starts
+
+
+%To reset the Header & Footer for TOC and LOF
+\pagestyle{empty}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+\tableofcontents % adds Index Page 
+\newpage
+\listoffigures % adds List of Figures
+\addtocontents{lof}{\protect\thispagestyle{empty}}
+%\listoffigures % adds List of Figures
+\cleardoublepage
+
+%And reset back the settings we choose for Header and Footer
+\pagestyle{fancy}
+
+\newpage
+\pagenumbering{arabic} %reset numbering to normal for the main content
+
+\input{introduction.tex} % adds the introduction page
+\newpage
+\input{srs.tex}
+\newpage
+
+\input{literature-survey.tex} % adds the Literature Survey page
+
+\newpage
+%\input{project/req-analysis.tex}
+%\input{project/system-design.tex}
+\newpage
+\input{proposedsystem}
+\newpage
+
+\input{advantageandapplication.tex}
+%\input{project/implementation.tex} % adds the Project Design
+%\input{project/screenshots.tex}
+\newpage
+\input{conclusion.tex} % adds the Scheduling and Planning page
+\newpage
+
+\input{ref.tex} % adds the References page
+
+\end{document}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\end{document}
